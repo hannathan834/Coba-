@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #87ceeb;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+#ui {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+  background: rgba(0,0,0,0.45);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+#gameover {
+  display: none;
+
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+
+  background: rgba(0,0,0,0.75);
+
+  color: white;
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#gameover h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+#gameover p {
+  font-size: 22px;
+}
+
+#gameover button {
+  padding: 14px 30px;
+  font-size: 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #00c853;
+  color: white;
+
+  cursor: pointer;
+}
+
+#controls {
+  position: fixed;
+
+  bottom: 20px;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  z-index: 10;
+}
+
+#controls button {
+  width: 65px;
+  height: 65px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0,0,0,0.5);
+  color: white;
+
+  font-size: 28px;
+
+  touch-action: manipulation;
+}
+
+#controls button:active {
+  transform: scale(0.9);
+}
