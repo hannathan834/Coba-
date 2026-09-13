@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>3D Runner</title>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <div id="ui">
+    <div>SKOR: <span id="score">0</span></div>
+    <div>COIN: <span id="coins">0</span></div>
+  </div>
+
+  <div id="gameover">
+    <h1>GAME OVER</h1>
+    <p>Skor: <span id="finalScore">0</span></p>
+    <button onclick="restartGame()">MAIN LAGI</button>
+  </div>
+
+  <div id="controls">
+    <button id="left">◀</button>
+    <button id="jump">▲</button>
+    <button id="right">▶</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
